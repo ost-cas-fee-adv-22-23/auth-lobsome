@@ -22,7 +22,7 @@ export default NextAuth({
       async profile(profile) {
         return {
           id: profile.sub,
-          username: profile.preferred_username?.replace('djurango@ost.zitadel.cloud', ''),
+          username: profile.preferred_username?.replace('@ost.zitadel.cloud', ''),
         };
       },
     },
